@@ -95,8 +95,6 @@ Handlebars.registerHelper('log', function(context) {
   Handlebars.log(context);
 });
 
-// END(BROWSER)
-
 Handlebars.loadPartial = function loadPartial(name) {
     var partial = Handlebars.partials[name];
     if (typeof partial === "string") {
@@ -168,6 +166,8 @@ Handlebars.registerHelper("extend", function extend(name) {
     return new Handlebars.SafeString(out);
 
 });
+
+// END(BROWSER)
 
 module.exports = Handlebars;
 
