@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     s.files += ['vendor/handlebars/lib/handlebars/compiler/parser.js']
   end
 
+  s.add_dependency "libv8", "~> 3.11.8"
   s.add_dependency "therubyracer", "~> 0.11.0beta3"
   s.add_dependency "commonjs", "~> 0.2.3"
   s.add_development_dependency "rake"

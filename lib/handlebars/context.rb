@@ -6,7 +6,8 @@ module Handlebars
     def initialize
       @js = CommonJS::Environment.new V8::Context.new, :path => [
         File.expand_path('../../../vendor/bootstrap', __FILE__),
-        File.expand_path('../../../vendor/handlebars/lib', __FILE__)
+        File.expand_path('../../../vendor/handlebars/lib', __FILE__),
+        File.expand_path('../../../vendor/partials', __FILE__)
       ]
       
       # This is a slightly modified version of handlebars.js found in the main
