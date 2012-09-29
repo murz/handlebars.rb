@@ -2,5 +2,4 @@ dist
 vendor
 .rvmrc
 .DS_Store
-lib/handlebars/compiler/parser.js
 node_modules
